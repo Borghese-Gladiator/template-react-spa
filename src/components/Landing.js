@@ -6,18 +6,19 @@ const Landing = (props) => {
       style={{
         height: "100vh",
         width: "200vh",
-        textAlign: "center",
-        background: "url('https://images.ctfassets.net/p24lh3qexxeo/6pVwdeqsPhWgXTQ8jbsHnQ/33081906e5b4af1e8396a05a1a95b193/home_hero.svg')",
+        background: "url('https://i.pinimg.com/originals/23/0f/af/230fafdbc613ff0cf6a80816b71f90c0.jpg')",
         /* Create the parallax scrolling effect */
         backgroundAttachment: "fixed",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "cover"
+        backgroundSize: "cover",
+        /* Vertical and Horizontal Center */
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
       }}>
-        <div style={{display: "inline-block"}}>
-          <h1>{ props.quote }</h1>
-          <h2 align="right" >-{ props.person }</h2>
-        </div>
+        <h1>{ props.quote }</h1>
+        <h2 align="right">-{ props.person }</h2>
     </header>
   )
 }

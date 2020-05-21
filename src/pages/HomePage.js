@@ -36,7 +36,7 @@ const characters = [
 
 export default function HomePage() {
   return (
-    <div className="container">
+    <div>
       <Landing quote={quote} person={person} />
       <h1 style={headerStyle}>Home Page</h1>
       <p>

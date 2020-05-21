@@ -1,4 +1,5 @@
 import React from 'react'
+import { Container, Row, Col } from 'reactstrap';
 
 const Landing = (props) => {
   return (
@@ -15,9 +16,12 @@ const Landing = (props) => {
         /* Vertical and Horizontal Center */
         display: "flex",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        /* Allow spaces */
+        whiteSpace: "pre-wrap"
       }}>
         <h1>{ props.quote }</h1>
+        <span>     </span>
         <h2 align="right">-{ props.person }</h2>
     </header>
   )

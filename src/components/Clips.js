@@ -25,7 +25,7 @@ const items = [
   }
 ];
 
-const Gallery = (props) => {
+const Clips = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -75,4 +75,4 @@ const Gallery = (props) => {
   );
 }
 
-export default Gallery;
+export default Clips;

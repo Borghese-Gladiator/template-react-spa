@@ -1,13 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Landing from '../components/Landing'
 import CharacterContainer from '../components/CharacterContainer'
 import Summary from '../components/Summary'
 import Gallery from '../components/Gallery'
-
-const headerStyle = {
-  textAlign: "center"
-}
+import Clips from '../components/Clips'
 
 const quote = '"The secret to getting ahead is getting started."'
 const person = "Mark Twain"
@@ -15,37 +11,41 @@ const characters = [
   {
     name:"Kurosaki Ichigo",
     age:"19",
-    ability:"Getsuga Tensha"
+    ability:"Getsuga Tensha",
+    image: "images/id5.jpg",
+    description: "A monster from the cloud region."
   },
   {
-    name:"Kurosaki Ichigo",
+    name:"Rukia Kuchiki",
     age:"19",
-    ability:"Getsuga Tensha"
+    ability:"Getsuga Tensha",
+    image: "images/id5.jpg",
+    description: "A monster from the cloud region."
   },
   {
-    name:"Kurosaki Ichigo",
+    name:"Yoruichi Shihouin",
     age:"19",
-    ability:"Getsuga Tensha"
+    ability:"Getsuga Tensha",
+    image: "images/id5.jpg",
+    description: "A monster from the cloud region."
   },
   {
-    name:"Kurosaki Ichigo",
+    name:"Sui Feng",
     age:"19",
-    ability:"Getsuga Tensha"
+    ability:"Getsuga Tensha",
+    image: "images/id5.jpg",
+    description: "A monster from the cloud region."
   }
 ]
 
 export default function HomePage() {
   return (
     <div>
-      <Landing quote={quote} person={person} />
-      <h1 style={headerStyle}>Home Page</h1>
-      <p>
-        <Link to="/taniarascia">taniarascia</Link> on GitHub.
-      </p>
-      
-      <CharacterContainer characters={characters}/>
-      <Summary />
-      <Gallery />
+      <Landing id="" quote={quote} person={person} />
+      <CharacterContainer id="characters" characters={characters}/>
+      <Summary id="summary" />
+      <Gallery id="gallery" />
+      <Clips id="clips" />
     </div>
   )
 }

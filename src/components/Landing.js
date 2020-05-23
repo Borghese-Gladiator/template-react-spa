@@ -1,9 +1,9 @@
 import React from 'react'
-import { Container, Row, Col } from 'reactstrap';
 
 const Landing = (props) => {
   return (
     <header
+      id={props.id}
       style={{
         height: "100vh",
         width: "200vh",

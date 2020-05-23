@@ -7,7 +7,7 @@ import './App.css';
 
 function App() {
   return (
-    <SingleLayout>
+    <SingleLayout name="Charlotte">
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={HomePage} />

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Button } from 'reactstrap'
 
 class Footer extends Component {
   render() {

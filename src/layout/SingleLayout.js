@@ -6,7 +6,7 @@ function SingleLayout(props) {
   const { children } = props;
   return (
     <div>
-      <Navbar />
+      <Navbar name={props.name} />
       {children}
       <Footer />
     </div>

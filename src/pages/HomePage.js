@@ -44,11 +44,15 @@ export default function HomePage() {
   return (
     <div>
       <Landing id="" quote={quote} person={person} />
+      <br />
       <MainMenu />
+      <br />
       <CharacterContainer id="characters" characters={characters}/>
       <br />
       <Summary id="summary" />
+      <br />
       <Gallery id="gallery" />
+      <br />
       <Clips id="clips" />
       
     </div>

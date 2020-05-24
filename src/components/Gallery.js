@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {
+  Container,
   Carousel,
   CarouselItem,
   CarouselControl,
@@ -61,16 +62,19 @@ const Gallery = (props) => {
 
   return (
     <section id={props.id}>
-      <Carousel
-        activeIndex={activeIndex}
-        next={next}
-        previous={previous}
-      >
-        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-        {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-      </Carousel>
+      <Container>
+      <h1 style={{textAlign: "center"}}>Photo Gallery</h1>
+        <Carousel
+          activeIndex={activeIndex}
+          next={next}
+          previous={previous}
+        >
+          <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+          {slides}
+          <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+          <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+        </Carousel>
+      </Container>
     </section>
   );
 }

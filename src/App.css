@@ -1,3 +1,11 @@
+body {
+  background-color: lightcyan;
+}
+ 
+.cardInfo {
+  background-color: lightblue;
+}
+
 .App {
   text-align: center;
 }

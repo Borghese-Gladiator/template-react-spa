@@ -5,6 +5,8 @@ import Summary from '../components/Summary'
 import Gallery from '../components/Gallery'
 import Clips from '../components/Clips'
 
+import MainMenu from '../components/MainMenu'
+
 const quote = '"The secret to getting ahead is getting started."'
 const person = "Mark Twain"
 const characters = [
@@ -42,10 +44,13 @@ export default function HomePage() {
   return (
     <div>
       <Landing id="" quote={quote} person={person} />
+      <MainMenu />
       <CharacterContainer id="characters" characters={characters}/>
+      <br />
       <Summary id="summary" />
       <Gallery id="gallery" />
       <Clips id="clips" />
+      
     </div>
   )
 }

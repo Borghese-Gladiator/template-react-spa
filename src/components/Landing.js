@@ -6,7 +6,7 @@ const Landing = (props) => {
       id={props.id}
       style={{
         height: "100vh",
-        width: "200vh",
+        width: "197vh",
         background: "url('https://i.pinimg.com/originals/23/0f/af/230fafdbc613ff0cf6a80816b71f90c0.jpg')",
         /* Create the parallax scrolling effect */
         backgroundAttachment: "fixed",

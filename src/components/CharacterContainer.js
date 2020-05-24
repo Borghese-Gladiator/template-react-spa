@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardGroup, Container, ListGroup, ListGroupItem } from 'reactstrap';
+import { CardGroup, Container } from 'reactstrap';
 import CharacterCard from './CharacterCard'
 
 const CharacterContainer = (props) => {
